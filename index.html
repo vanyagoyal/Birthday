@@ -1,0 +1,199 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orelega+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <title>Papa's 40th Birthday</title>
+</head>
+
+<body onload="play1()">
+    <audio id="music" src="music.mp3"></audio>
+    <marquee id="head">Happy 40<sup>th</sup> Birthday Papa !!!</marquee>
+    <br>
+    <h2 id="q1">"The heart of a father is the masterpiece of the nature."</h2>
+    <br>
+
+
+    <button class="btn btn-warning" onclick="snapshot();">Take Snapshot</button>
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+    <p id="meaning">
+        <Span class="a">F</Span><span>antastic</span>
+        <br>
+        <Span class="a">A</Span><span>wesome</span>
+        <br>
+        <Span class="a">T</Span><span>eacher</span>
+        <br>
+        <Span class="a">H</Span><span>ero</span>
+        <br>
+        <Span class="a">E</Span><span>ncouraging</span>
+        <br>
+        <Span class="a">R</Span><span>espectful</span>
+    </p>
+    <div class="container">
+        <br><br>
+        <div id="mycarousel" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="item active">
+                    <center>
+                        <img src="A.jpeg">
+                    </center>
+                </div>
+                <div class="item">
+                    <center>
+                        <img src="B.jpeg">
+                    </center>
+                </div>
+                <div class="item two">
+                    <center>
+                        <img src="C.png">
+                    </center>
+                </div>
+                <div class="item">
+                    <center>
+                        <img src="D.png">
+                    </center>
+                </div>
+                <div class="item">
+                    <center>
+                        <img src="E.png">
+                    </center>
+                </div>
+                <div class="item">
+                    <center>
+                        <img src="F.png">
+                    </center>
+                </div>
+                <div class="item">
+                    <center>
+                        <img src="G.jpeg">
+                    </center>
+                </div>
+                <div class="item">
+                    <center>
+                        <img src="H.jpg">
+                    </center>
+                </div>
+                <div class="item">
+                    <center>
+                        <img src="I.jpeg">
+                    </center>
+                </div>
+                <div class="item one">
+                    <center>
+                        <img src="J.jpeg">
+                    </center>
+                </div>
+                <div class="item one">
+                    <center>
+                        <img src="ZA.jpeg">
+                    </center>
+                </div>
+            </div>
+
+            <a class="left carousel-control" href="#mycarousel" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+            </a>
+            <a class="right carousel-control" href="#mycarousel" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+            </a>
+            <ol class="carousel-indicators">
+                <li data-target="#mycarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#mycarousel" data-slide-to="1"></li>
+                <li data-target="#mycarousel" data-slide-to="2"></li>
+                <li data-target="#mycarousel" data-slide-to="3"></li>
+                <li data-target="#mycarousel" data-slide-to="4"></li>
+                <li data-target="#mycarousel" data-slide-to="5"></li>
+                <li data-target="#mycarousel" data-slide-to="6"></li>
+                <li data-target="#mycarousel" data-slide-to="7"></li>
+                <li data-target="#mycarousel" data-slide-to="8"></li>
+                <li data-target="#mycarousel" data-slide-to="9"></li>
+                <li data-target="#mycarousel" data-slide-to="10"></li>
+            </ol>
+        </div>
+        <h2 class="heads"> Grid View </h2>
+        <div class="grid g1">
+            <div class="image">
+                <img src="K.jpeg">
+            </div>
+
+            <div class="image">
+                <img src="L.jpeg">
+            </div>
+
+            <div class="image">
+                <img src="T.jpeg">
+            </div>
+
+            <div class="image">
+                <img src="N.jpeg">
+            </div>
+        </div>
+        <div class="grid">
+            <div class="image">
+                <img src="O.jpg">
+            </div>
+
+            <div class="image">
+                <img src="P.jpg">
+            </div>
+
+            <div class="image">
+                <img src="Q.jpeg">
+            </div>
+
+            <div class="image">
+                <img src="R.jpeg">
+            </div>
+        </div>
+
+        <div class="grid">
+             <div class="image">
+                <img src="S.jpeg">
+            </div>
+
+            <div class="image">
+                <img src="M.jpeg">
+            </div>
+
+            <div class="image">
+                <img src="U.jpeg">
+            </div>
+
+            <div class="image">
+                <img src="V.jpeg">
+            </div>
+             </div>
+        <div class="grid">
+            <div class="image">
+                <img src="W.jpg">
+            </div>
+
+            <div class="image">
+                <img src="X.jpg">
+            </div>
+
+            <div class="image">
+                <img src="Y.jpg">
+            </div>
+
+            <div class="image">
+                <img src="Z.jpg">
+            </div>
+        </div>
+        <br>
+
+        <h3 class="abc">WE ALL LOVE YOU SO MUCH PAPA...OUR LOVE FOR YOU IS OVERWHELMING</h3>
+</div>
+<script src="main.js"></script>
+</body>
+
+</html>
