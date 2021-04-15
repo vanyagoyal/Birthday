@@ -1,0 +1,87 @@
+body {
+    text-align: center;
+    background-color: rgb(174, 245, 174) !important;
+    height:2000px;
+}
+
+.container {
+    text-align: center;
+    background-color: transparent;
+}
+.heads {
+    color:darkmagenta;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 50px;
+    font-weight: 500;
+}
+
+.grid {
+    display:flex;
+    width: 50px;
+}
+
+#mycarousel img {
+    height: 350px;
+    margin-top: 35px;
+}
+
+.carousel-inner p {
+    margin-bottom: 15px;
+    margin-top: 15px;
+    color: white;
+    font-size: 20px;
+}
+
+img {
+    width: 290px;
+    height: 280px;
+    transition: transform .2s;
+    border-radius:20px;
+}
+
+img:hover {
+    transform: scale(0.9);
+}
+
+#head {
+    font-family: 'Orelega One', cursive;
+    color: red;
+    font-size: 70px;
+    background-color: aquamarine;
+}
+.g1 img{
+    height:350px;
+}
+#q1 {
+    color:yellow;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: italic;
+    font-weight: 500;
+    animation-name: filter;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    margin-top: 120px;
+    padding: 5px;
+}
+@keyframes filter {
+    from {background-color: rgba(255, 0, 0, 0.582);}
+    to {background-color: rgba(0, 0, 255, 0.582);}
+}
+.abc {
+    color:orangered;
+    font-weight: bolder;
+    font-family:cursive;
+    font-size:30px;
+}
+#meaning {
+    width:100px;
+    margin-left:45%;
+    text-align:left;
+    color:blue;
+    font-weight:bold;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size:40px;
+}
+.a {
+    color:olive;
+}
